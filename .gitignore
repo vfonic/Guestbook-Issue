@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings
+META-INF
+appengine-generated
+classes
+lib
+*.ico
+*.properties
