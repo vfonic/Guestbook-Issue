@@ -6,7 +6,8 @@ This is a repository that documents a bug that occurs while accessing JSP file a
 I wanted to make simple app using only one jsp file and one servlet. The root of my app was jsp file and I was calling servlet just when I was submitting the form.
 
 I realised (after several hours of debugging), that, in production (in development/localhost it works), there's a bug with this line here:
-<jsp:forward page="<%= userService.createLoginURL(root) %>" />
+
+    <jsp:forward page="<%= userService.createLoginURL(root) %>" />
 
 ...where root is just String object "/".
 
